@@ -1,0 +1,25 @@
+@import './color';
+.intro {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .intro-img {
+        order: 2;
+    }
+    .intro-des {
+        .highlight {
+            width: 50%;
+            margin: 0;
+            color: $yellow;
+            font-size: 40px;
+        }
+        .description {
+
+        }
+    }
+}

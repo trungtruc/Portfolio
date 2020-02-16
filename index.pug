@@ -1,0 +1,31 @@
+-var navItems = ['home', 'about', 'work'];
+
+doctype html
+html(lang=en)
+  head
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    link(rel='stylesheet' href='./styles/style.css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <title>Dev Egg - Portfolio</title>
+  body
+    
+    header
+      .logo-container
+        h2. 
+          &#60;DevEgg /&#62;
+      nav
+        ul.nav-list
+          each item in navItems
+            li
+              a.nav-link(href='#' id= item)= item
+    .intro
+      .intro-img
+        img(src='./imgs/Profile-picture.png' width='600px')
+      .intro-des
+        p.highlight Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae officiis natus quas laudantium modi, quia harum magnam qui ipsa nostrum? Modi iste fugiat distinctio quis. Voluptas dolor ad animi aspernatur!
+    footer
+      p I’m available for freelance work, you can reach me by
+    script(src='./js/app.js')
